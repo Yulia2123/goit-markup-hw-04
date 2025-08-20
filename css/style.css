@@ -13,6 +13,7 @@ body {
 .container {
     width: 1158px;
     margin: 0 auto; 
+    padding: 0 15px;
 }
 /* Логотип */
 
@@ -25,7 +26,6 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    flex-grow: 1;
     padding: 24px;
     margin-right: 76px
 }
@@ -40,9 +40,9 @@ body {
 }
 
 .header-container {
+    display: flex;
     padding-top: 24px;
     height: 72px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e7e9fc;
@@ -53,10 +53,11 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-weight: 500;
-    display: flex;
+    display: block;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
 }
 
 ul {
