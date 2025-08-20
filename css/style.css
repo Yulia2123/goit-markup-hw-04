@@ -10,7 +10,7 @@ body {
     gap: 40px; 
 }
 
-.container-all {
+.container {
     width: 1158px;
     margin: 0 auto; 
 }
@@ -41,7 +41,6 @@ body {
 
 .header-container {
     padding-top: 24px;
-    width: 1440px;
     height: 72px;
     display: flex;
     justify-content: space-between;
@@ -113,7 +112,6 @@ nav {
     margin-top: 24px;
     margin-bottom: 120px;
     background-color: #2e2f42;
-    width: 1440px;
     height: 600px;
     display: flex;
     flex-direction: column;  
@@ -213,7 +211,6 @@ nav {
 
 .section-about {
     background-color: #F4F4FD;
-    width: 1440px;
     height: 732px; 
 }
 
@@ -254,7 +251,6 @@ img {
 
 .about-container {
     display: flex;
-    width: 1440px;
     height: 732px;
 }
 .first-item-about {
