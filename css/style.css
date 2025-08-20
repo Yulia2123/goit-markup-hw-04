@@ -216,6 +216,9 @@ ul {
     list-style: none;
     display: block;
 }
+img {
+    display: block;
+}
 .images li h3 {
     font-weight: 500;
     font-size: 20px;
