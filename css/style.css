@@ -27,6 +27,7 @@ body {
     text-decoration: none;
     flex-grow: 1;
     padding: 24px;
+    margin-right: 76px
 }
 
 .logo-type span {
@@ -53,6 +54,10 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-weight: 500;
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 ul {
@@ -61,7 +66,8 @@ ul {
     padding: 0;
 }
 nav {
-    display: flex; 
+    display: flex;
+    align-items: center; 
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -75,17 +81,17 @@ nav {
 .header-nav-list {
     display: flex;
     gap: 40px;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     list-style: none;
 }
+
 .contacts-list {
     display: flex;
     gap: 40px; 
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     list-style: none;
-    
 }
 /* Контакти */
 .contact-link {
