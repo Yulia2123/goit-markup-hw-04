@@ -211,7 +211,7 @@ img {
     list-style: none; 
 
 }
-.benefits-item {
+.benefits-first:first-child{
     flex-basis: calc((100% - 72px) / 4);
 }
 
