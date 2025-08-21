@@ -210,7 +210,12 @@ img {
 .section-benefits {
     padding: 120px 0;
 }
+.benefits-list {
+    display: flex; /* Додано: розташування елементів по горизонталі */
+    gap: 24px; /* Додано: відступи між елементами списку */
+    list-style: none; /* Залишено для візуалу: прибирає маркери */
 
+}
 .benefits-item {
     flex-basis: calc((100% - 72px) / 4);
 }
@@ -250,6 +255,7 @@ img {
 }
 
 .third-title {
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
