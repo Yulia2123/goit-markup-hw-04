@@ -154,12 +154,22 @@ nav {
 
 /* Benefits */
 
-
+.section-benefits-light {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .benefits-list {
     display: flex;
     gap: 24px;
     justify-content: center;
     margin-left: 156px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-item {
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .visually-hidden {
