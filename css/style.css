@@ -254,9 +254,28 @@ img {
     list-style: none;
 }
 
+/* About */
+
+.section-about {
+    padding: 120px 0;
+}
 .about-container {
     display: flex;
     height: 732px;
+}
+.about-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 72px; 
+    color: #2e2f42;
+}
+.images-list {
+    display: flex;        
+    gap: 24px;             
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .first-item-about {
     background-color: #FFFFFF;
