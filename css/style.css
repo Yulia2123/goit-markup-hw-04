@@ -13,64 +13,64 @@ body {
 
 /* Логотип */
 .main-header {
-    border-bottom: 1px solid #e7e9fc; /* Відповідає критерію: нижня межа хедера */
+    border-bottom: 1px solid #e7e9fc; 
 }
 
 .container {
-    width: 1158px; /* Відповідає критерію: ширина контейнера */
-    margin: 0 auto; /* Відповідає критерію: центрування контейнера */
-    padding: 0 15px; /* Відповідає критерію: відступи контейнера */
+    width: 1158px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
 }
 
 .header-container {
-    display: flex; /* Відповідає критерію: розташування елементів у рядок */
+    display: flex; 
 }
 
 .header-nav {
-    display: flex; /* Відповідає критерію: розташування логотипу та меню */
-    align-items: center; /* Відповідає критерію: вирівнювання по вертикалі */
+    display: flex; 
+    align-items: center; 
 }
 
 .logo-type {
-    margin-right: 76px; /* Відповідає критерію: відступ від логотипу */
-    font-family: "Raleway", sans-serif; /* Залишено для візуалу: шрифт */
-    font-weight: 700; /* Залишено для візуалу: товщина шрифту */
-    font-size: 18px; /* Залишено для візуалу: розмір шрифту */
-    line-height: 1.17; /* Залишено для візуалу: висота рядка */
-    letter-spacing: 0.03em; /* Залишено для візуалу: міжлітерний інтервал */
-    text-transform: uppercase; /* Залишено для візуалу: верхній регістр */
-    color: #4d5ae5; /* Залишено для візуалу: колір */
-    text-decoration: none; /* Залишено для візуалу: без підкреслення */
+    margin-right: 76px; 
+    font-family: "Raleway", sans-serif; 
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 1.17; 
+    letter-spacing: 0.03em; 
+    text-transform: uppercase; 
+    color: #4d5ae5; 
+    text-decoration: none; 
 }
 
 .logo-span {
-    color: #2e2f42; /* Залишено для візуалу: колір span */
+    color: #2e2f42;
 }
 
 .header-nav-list {
-    display: flex; /* Відповідає критерію: розташування пунктів меню */
-    gap: 40px; /* Відповідає критерію: відступи між пунктами меню */
-    list-style: none; /* Залишено для візуалу: прибирає маркери */
+    display: flex; 
+    gap: 40px; 
+    list-style: none; 
 }
 
 .nav-link {
-    padding: 24px 0; /* Відповідає критерію: відступи в посиланні */
-    color: #2e2f42; /* Залишено для візуалу: колір */
-    font-weight: 500; /* Залишено для візуалу: товщина шрифту */
-    text-decoration: none; /* Залишено для візуалу: без підкреслення */
+    padding: 24px 0; 
+    color: #2e2f42; 
+    font-weight: 500; 
+    text-decoration: none; 
 }
 
 .contacts-list {
-    display: flex; /* Відповідає критерію: розташування контактів */
-    gap: 40px; /* Відповідає критерію: відступи між контактами */
-    list-style: none; /* Залишено для візуалу: прибирає маркери */
+    display: flex; 
+    gap: 40px; 
+    list-style: none;
 }
 
 .contact-link {
-    color: #434455; /* Залишено для візуалу: колір */
-    font-weight: 400; /* Залишено для візуалу: товщина шрифту */
-    line-height: 1.5; /* Залишено для візуалу: висота рядка */
-    text-decoration: none; /* Залишено для візуалу: без підкреслення */
+    color: #434455; 
+    font-weight: 400; 
+    line-height: 1.5;
+    text-decoration: none; 
 }
 /* .logo-type {
     font-family: "Raleway", sans-serif;
@@ -211,12 +211,12 @@ img {
     padding: 120px 0;
 }
 .benefits-list {
-    display: flex; /* Додано: розташування елементів по горизонталі */
-    gap: 24px; /* Додано: відступи між елементами списку */
-    list-style: none; /* Залишено для візуалу: прибирає маркери */
+    display: flex; 
+    gap: 24px; 
+    list-style: none; 
 
 }
-.benefits-item {
+.benefits-item:first-child {
     flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -274,56 +274,56 @@ img {
 
 /* About */
 .section-about {
-    padding: 120px 0; /* Залишено: відповідає критерію для секції (padding для відступів) */
-    background-color: #F4F4FD; /* Залишено для візуалу: задає фон секції, але може заважати при суворій перевірці, бо не згадан у критеріях */
+    padding: 120px 0; 
+    background-color: #F4F4FD; 
 }
 
 .container {
-    padding: 0 15px; /* Залишено: фіксований стиль контейнера з попереднього запиту */
-    width: 1158px; /* Залишено: фіксований стиль контейнера */
-    margin: 0 auto; /* Залишено: фіксований стиль контейнера */
+    padding: 0 15px; 
+    width: 1158px; 
+    margin: 0 auto; 
 }
 
 .about-title {
-    margin-bottom: 72px; /* Залишено: відповідає критерію для заголовка h2 (відступ до списку) */
+    margin-bottom: 72px; 
 }
 
 .images-list {
-    display: flex; /* Залишено: відповідає критерію для списку (розташування елементів у рядок) */
-    gap: 24px; /* Залишено: відповідає критерію для відступів між елементами списку */
-    list-style: none; /* Додано: прибирає маркери списку, як зазначено у вашому запиті */
-    flex-wrap: nowrap; /* Додано: забезпечує горизонтальне розташування всіх 4 елементів без перенесення */
-    justify-content: center; /* Залишено для візуалу: центрує елементи списку, але може заважати, бо не згадан у критеріях */
-    padding: 0; /* Залишено для візуалу: прибирає відступи списку, але може заважати, бо не згадан у критеріях */
-    margin: 0; /* Залишено для візуалу: прибирає відступи списку, але може заважати, бо не згадан у критеріях */
+    display: flex; 
+    gap: 24px; 
+    list-style: none; 
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .about-item {
-    flex-basis: calc((100% - 72px) / 4); /* Залишено: відповідає критерію для ширини елементів списку (еквівалент width) */
-    border-radius: 0 0 4px 4px; /* Залишено: відповідає критерію для заокруглень внизу блока */
-    flex-shrink: 0; /* Залишено для візуалу: запобігає стисканню елементів, але може заважати, бо не згадан у критеріях */
-    /* Видалено: закоментовані border і overflow, оскільки вони не впливають на рендеринг, але можуть заважати при перевірці */
+    flex-basis: calc((100% - 72px) / 4); 
+    border-radius: 0 0 4px 4px; 
+    flex-shrink: 0; 
+    
 }
 
 .about-item img {
-    width: 100%; /* Залишено для візуалу: забезпечує повну ширину зображення, але може заважати, бо зображення не згадані в критеріях */
-    height: auto; /* Залишено для візуалу: зберігає пропорції зображення, але може заважати */
-    display: block; /* Залишено для візуалу: прибирає зайві відступи під зображенням, але може заважати */
+    width: 100%; 
+    height: auto;
+    display: block; 
 }
 
 .about-card {
-    padding: 32px 0; /* Залишено: відповідає критерію для контейнера в пунктах списку */
-    border: 1px solid #e7e9fc; /* Залишено для візуалу: задає межі картки, але може заважати, бо не згадан у критеріях */
-    border-top: none; /* Залишено для візуалу: прибирає верхню межу, але може заважати, бо не згадан у критеріях */
+    padding: 32px 0; 
+    border: 1px solid #e7e9fc; 
+    border-top: none;
 }
 
 .about-name {
-    text-align: center; /* Залишено: відповідає критерію для заголовка h3 (вирівнювання по центру) */
-    margin-bottom: 8px; /* Залишено: відповідає критерію для відступу від h3 до p */
+    text-align: center; 
+    margin-bottom: 8px; 
 }
 
 .about-position {
-    text-align: center; /* Залишено: відповідає критерію для параграфа p (вирівнювання по центру) */
+    text-align: center; 
 }
 /* .about-title {
     margin-bottom: 72px;
@@ -409,7 +409,7 @@ img {
 }
 .portfolio-item img {
         display: block;
-        width: 100%;  /* чтобы подстраивались по контейнеру */
+        width: 100%;  
         height: auto;
 }
 
@@ -468,14 +468,14 @@ img {
     font-weight: 400;
 } */
 .footer-main {
-    padding: 100px 0; /* Відповідає критерію: padding для футера */
+    padding: 100px 0; 
 }
 
 .logo-footer {
-    display: inline-block; /* Відповідає критерію: блочні властивості для посилання */
-    margin-bottom: 16px; /* Відповідає критерію: відступ між посиланням і параграфом */
+    display: inline-block; 
+    margin-bottom: 16px;
 }
 
 .footer-info {
-    max-width: 264px; /* Відповідає критерію: максимальна ширина для параграфа */
+    max-width: 264px; 
 }
