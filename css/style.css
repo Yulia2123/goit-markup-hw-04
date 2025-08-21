@@ -285,6 +285,7 @@ img {
     width: 264px;
     text-align: center;
     display: block;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .first-item-class {
