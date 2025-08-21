@@ -216,8 +216,8 @@ img {
     list-style: none; 
 
 }
-.benefits-item:first-child {
-    flex-basis: calc((100% - 72px) / 4);
+.benefits-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .second-title,
