@@ -278,15 +278,36 @@ img {
     margin: 0;
 }
 .first-item-about {
+    flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: #FFFFFF;
-    border-radius: 8px;   
-    overflow: hidden;     
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
-    width: 264px;
-    text-align: center;
-    display: block;
-    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.about-card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.about-name {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.about-position {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+
 
 .first-item-class {
     background-color: #FFFFFF;
