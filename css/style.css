@@ -205,8 +205,8 @@ img {
     padding: 120px 0;
 }
 .benefits-list {
-    flex-wrap: wrap;
     display: flex; 
+    flex-wrap: wrap;
     gap: 24px; 
     list-style: none; 
 
