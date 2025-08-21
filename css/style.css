@@ -12,7 +12,67 @@ body {
 }
 
 /* Логотип */
+.main-header {
+    border-bottom: 1px solid #e7e9fc; /* Відповідає критерію: нижня межа хедера */
+}
+
+.container {
+    width: 1158px; /* Відповідає критерію: ширина контейнера */
+    margin: 0 auto; /* Відповідає критерію: центрування контейнера */
+    padding: 0 15px; /* Відповідає критерію: відступи контейнера */
+}
+
+.header-container {
+    display: flex; /* Відповідає критерію: розташування елементів у рядок */
+}
+
+.header-nav {
+    display: flex; /* Відповідає критерію: розташування логотипу та меню */
+    align-items: center; /* Відповідає критерію: вирівнювання по вертикалі */
+}
+
 .logo-type {
+    margin-right: 76px; /* Відповідає критерію: відступ від логотипу */
+    font-family: "Raleway", sans-serif; /* Залишено для візуалу: шрифт */
+    font-weight: 700; /* Залишено для візуалу: товщина шрифту */
+    font-size: 18px; /* Залишено для візуалу: розмір шрифту */
+    line-height: 1.17; /* Залишено для візуалу: висота рядка */
+    letter-spacing: 0.03em; /* Залишено для візуалу: міжлітерний інтервал */
+    text-transform: uppercase; /* Залишено для візуалу: верхній регістр */
+    color: #4d5ae5; /* Залишено для візуалу: колір */
+    text-decoration: none; /* Залишено для візуалу: без підкреслення */
+}
+
+.logo-span {
+    color: #2e2f42; /* Залишено для візуалу: колір span */
+}
+
+.header-nav-list {
+    display: flex; /* Відповідає критерію: розташування пунктів меню */
+    gap: 40px; /* Відповідає критерію: відступи між пунктами меню */
+    list-style: none; /* Залишено для візуалу: прибирає маркери */
+}
+
+.nav-link {
+    padding: 24px 0; /* Відповідає критерію: відступи в посиланні */
+    color: #2e2f42; /* Залишено для візуалу: колір */
+    font-weight: 500; /* Залишено для візуалу: товщина шрифту */
+    text-decoration: none; /* Залишено для візуалу: без підкреслення */
+}
+
+.contacts-list {
+    display: flex; /* Відповідає критерію: розташування контактів */
+    gap: 40px; /* Відповідає критерію: відступи між контактами */
+    list-style: none; /* Залишено для візуалу: прибирає маркери */
+}
+
+.contact-link {
+    color: #434455; /* Залишено для візуалу: колір */
+    font-weight: 400; /* Залишено для візуалу: товщина шрифту */
+    line-height: 1.5; /* Залишено для візуалу: висота рядка */
+    text-decoration: none; /* Залишено для візуалу: без підкреслення */
+}
+/* .logo-type {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -30,13 +90,13 @@ body {
 }
 
 /* Навігація */
-nav {
+/* nav {
     display: flex;
     align-items: center;
 }
-/* .main-header {
+.main-header {
     border-bottom: 1px solid #e7e9fc;
-} */
+} 
 .header-nav-list {
     display: flex;
     gap: 40px;
@@ -66,7 +126,6 @@ nav {
     align-items: center;
     padding-top: 24px;
     height: 72px;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav-list,
@@ -76,13 +135,13 @@ nav {
 .images-list {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     /* list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 24px;
-    flex-wrap: wrap; */
+    flex-wrap: wrap; 
 }
 
 .nav-link,
@@ -98,7 +157,7 @@ nav {
 .contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
-}
+} */
 
 /* Hero */
 .section-hero {
