@@ -216,7 +216,7 @@ img {
     list-style: none; 
 
 }
-.benefits-item {
+.benefits-item:first-child {
     width: calc((100% - 72px) / 4);
 }
 
