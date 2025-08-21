@@ -242,10 +242,6 @@ img {
     box-sizing: border-box;
 }
 
-.images-portfolio li {
-    flex-basis: calc((100% - 2 * 24px) / 3);
-}
-
 /* Footer */
 .footer-main {
     background-color: #2e2f42;
