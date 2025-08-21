@@ -315,6 +315,11 @@ img {
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
@@ -326,6 +331,11 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-studio {
