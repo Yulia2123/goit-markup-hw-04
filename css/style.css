@@ -34,9 +34,9 @@ nav {
     display: flex;
     align-items: center;
 }
-.main-header {
+/* .main-header {
     border-bottom: 1px solid #e7e9fc;
-}
+} */
 .header-nav-list {
     display: flex;
     gap: 40px;
@@ -74,12 +74,15 @@ nav {
 .benefits-list,
 .images,
 .images-list {
-    list-style: none;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    /* list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .nav-link,
@@ -205,6 +208,22 @@ img {
 }
 
 /* About */
+
+.about-item {
+    flex-basis: calc((100% - 3 * 24px) / 4); 
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #e7e9fc;
+    overflow: hidden;
+}
+.images-list {
+    display: flex;           
+    gap: 24px;              
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .section-about {
     padding: 120px 0;
     background-color: #F4F4FD;
@@ -212,20 +231,29 @@ img {
 
 .about-card,
 .item-container {
-    padding: 32px 16px;
+    padding: 32px 0px;
     border: 1px solid #e7e9fc;
     border-top: none;
     text-align: center;
 }
 
-.about-name,
-.third-title {
+.about-name {
+    text-align: center;
     margin-bottom: 8px;
+}
+.third-title {
+    text-align: center;
 }
 
 /* Portfolio */
+
+.container-portfolio {
+    padding: 120px 0;
+
+}
 .second-title-portfolio {
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .third-title-portfolio {
@@ -236,16 +264,28 @@ img {
 .images-portfolio {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    justify-content: flex-start;
+    column-gap: 24px;    
     row-gap: 48px;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.first-item-about {
-    width: calc((100% - 48px)/3);
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
     border-radius: 0 0 4px 4px; 
+    overflow: hidden;
+    display: flex;              
+    flex-direction: column; 
+}
+.portfolio-item img {
+        display: block;
+        width: 100%;  /* чтобы подстраивались по контейнеру */
+        height: auto;
+}
+.images-portfolio li {
+    width: calc((100% - 2 * 24px) / 3); 
 }
 
 .item-container {
