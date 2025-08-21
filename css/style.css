@@ -311,7 +311,7 @@ img {
 .footer-main {
     background-color: #2e2f42;
     color: #f4f4fd;
-    text-align: left;
+    /* text-align: left; */
     padding: 100px 0;
 }
 
