@@ -4,19 +4,14 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
-.header-nav {
-    display: flex;
-    align-items: center;
-    gap: 40px; 
-}
 
 .container {
     padding: 0 15px;
     width: 1158px;
-    margin: 0 auto; 
-} 
-/* Логотип */
+    margin: 0 auto;
+}
 
+/* Логотип */
 .logo-type {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -27,7 +22,7 @@ body {
     color: #4d5ae5;
     text-decoration: none;
     padding: 24px;
-    margin-right: 76px
+    margin-right: 76px;
 }
 
 .logo-type span {
@@ -35,74 +30,38 @@ body {
 }
 
 /* Навігація */
-.main-header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
 .header-container {
     display: flex;
-    padding-top: 24px;
-    height: 72px;
     justify-content: space-between;
     align-items: center;
+    padding-top: 24px;
+    height: 72px;
     border-bottom: 1px solid #e7e9fc;
 }
-.nav-link {
-    color: #2e2f42;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    font-weight: 500;
-    display: block;
-    gap: 40px;
-    padding: 24px 0;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
-}
 
-ul {
+.header-nav-list,
+.contacts-list,
+.benefits-list,
+.images,
+.images-list {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-nav {
     display: flex;
-    align-items: center; 
-}
-.nav-link:hover,
-.nav-link:focus {
-    color: #404bbf;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
-.contacts-address {
-    font-style: normal; 
-}
-
-.header-nav-list {
-    display: flex;
-    gap: 40px;
-    /* margin: 0;
-    padding: 0; */
-    list-style: none;
-}
-
-.contacts-list {
-    display: flex;
-    gap: 40px; 
-    /* margin: 0;
-    padding: 0; */
-    list-style: none;
-}
-/* Контакти */
+.nav-link,
 .contact-link {
-    color: #434455;
-    font-weight: 400;
+    text-decoration: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
-    display: flex;
+    color: #2e2f42;
 }
 
+.nav-link:hover,
+.nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
@@ -148,44 +107,22 @@ nav {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #404bbf; 
+    background-color: #404bbf;
     outline: none;
 }
 
 /* Benefits */
-
 .section-benefits {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.benefits-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    margin-left: 156px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 120px 0;
 }
 
 .benefits-item {
     flex-basis: calc((100% - 72px) / 4);
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-.second-title {
+.second-title,
+.about-title,
+.second-title-portfolio {
     font-family: "Roboto", sans-serif;
     text-align: center; 
     font-weight: 700;
@@ -194,9 +131,14 @@ nav {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    /* margin-bottom: 72px;
-    margin-top: 240px; */
+}
+
+.second-title {
     margin-bottom: 8px;
+}
+
+.second-title-portfolio {
+    margin-bottom: 72px;
 }
 
 .third-title {
@@ -207,209 +149,49 @@ nav {
     font-weight: 500;
 }
 
-.profession-benefits {
-    color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-}
-
-.section-about {
-    background-color: #F4F4FD;
-    height: 732px; 
-}
-
-.images {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-img {
-    display: block;
-}
-.images li h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.images li p {
+.profession,
+.profession-benefits,
+.about-position {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
-
-.header-nav-list,
-.contacts-list,
-.benefits-list,
-.images {
-    list-style: none;
 }
 
 /* About */
 .section-about {
     padding: 120px 0;
+    background-color: #F4F4FD;
 }
 
-.about-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 72px;
-    color: #2e2f42;
-}
-
-.images-list {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.about-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-    background-color: #fff;
-    border-radius: 0 0 4px 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about-card {
-    padding: 32px 0;
-    text-align: center;
-}
-
-.about-name {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
-.about-position {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-/* .section-about {
-    padding: 120px 0;
-}
-.about-container {
-    display: flex;
-    height: 732px;
-}
-.about-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 72px; 
-    color: #2e2f42;
-}
-.images-list {
-    display: flex;        
-    gap: 24px;             
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.first-item-about {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-    background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about-card {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.about-name {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: center;
-    margin-bottom: 8px;
-}
-.about-position {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-align: center;
-}
-
-
-.first-item-class {
-    background-color: #FFFFFF;
-}
-
-.first-item-class h3 {
-    margin-top: 32px;
-    margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    font-weight: 500;
-}
-
-.first-item-class p {
-    color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-} */
+.about-card,
 .item-container {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    text-align: center;
 }
-.second-title-portfolio{
-    margin-bottom: 72;
+
+.about-name,
+.third-title {
+    margin-bottom: 8px;
 }
+
+/* Portfolio */
+.images li {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
 /* Footer */
-
-.footer-container{
-    display: flex;
-    width: 1158px;
-    margin: 0 auto;
-
-}
-
 .footer-main {
     background-color: #2e2f42;
     color: #f4f4fd;
     text-align: left;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
-.footer-logo-container {
-    max-width: 264px;
-}
+
 .logo-footer {
-    display: inline-block;  
+    display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -417,21 +199,19 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5; 
+    color: #4d5ae5;
     text-decoration: none;
 }
 
 .footer-studio {
-    color: #f4f4fd; 
+    color: #f4f4fd;
 }
+
 .footer-info {
-    max-width: 264px;   
+    max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    /* padding-bottom: 100px;
-    padding-left: 156px; */
-    /* width: 34%; */
 }
