@@ -227,7 +227,6 @@ nav {
     padding: 0;
     margin: 0;
     list-style: none;
-    display: block;
 }
 img {
     display: block;
@@ -382,7 +381,14 @@ img {
     letter-spacing: 0.02em;
     font-weight: 400;
 } */
-
+.item-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.second-title-portfolio{
+    margin-bottom: 72;
+}
 /* Footer */
 
 .footer-container{
