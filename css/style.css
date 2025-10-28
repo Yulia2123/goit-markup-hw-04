@@ -4,8 +4,12 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
-
-.container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-benefits {
     padding: 0 15px;
     width: 1158px;
     margin: 0 auto;
@@ -13,17 +17,20 @@ body {
 
 /* Логотип */
 .main-header {
-    border-bottom: 1px solid #e7e9fc; 
-}
+    border-bottom: 1px solid #e7e9fc;  
 
+}
 .header-container {
     display: flex; 
-}
+    align-items: center;
+    justify-content: space-between;
+} 
+
 
 .header-nav {
     display: flex; 
     align-items: center; 
-}
+} 
 
 .logo-type {
     margin-right: 76px; 
@@ -45,13 +52,54 @@ body {
     display: flex; 
     gap: 40px; 
     list-style: none; 
+    padding: 0;
+    margin: 0;
 }
 
 .nav-link {
+    display: block;
     padding: 24px 0; 
     color: #2e2f42; 
     font-weight: 500; 
-    text-decoration: none; 
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.header-nav-list-item a::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(64, 75, 191);
+    border-radius: 2px;
+}
+
+.header-nav-list-item a:hover {
+    color: rgb(64, 75, 191);
+
+}
+
+.header-nav-list-item a:hover::after {
+    width: 100%; 
+}
+
+.contacts-address {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    text-align: center; 
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    /* font-style: normal;
+    font-family: "Roboto", sans-serif;
+    text-align: center; 
+    font-weight: 400;
+    padding: 0%;
+    margin: 0;
+    margin-right: auto; */
 }
 
 .contacts-list {
@@ -155,14 +203,29 @@ body {
 
 /* Hero */
 .section-hero {
-    margin-top: 24px;
-    margin-bottom: 120px;
-    background-color: #2e2f42;
-    height: 600px;
+    /*margin-bottom: 120px;*/
+    /* background-color: #2e2f42; */
+    height: 100vh;
     display: flex;
     align-items: center;      
     text-align: center;
     padding: 188px 0;
+    /* background-color: rgba(46, 47, 66, 0.7); */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url("../images/header.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero-container {
+    padding: 0 15px; 
+    width: 1158px; 
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -204,6 +267,27 @@ img {
 .section-benefits {
     padding: 120px 0;
 }
+
+.section-benefits-icon {
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: solid 1px #8E8F99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.benefits-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;        
+}
+
+
 .benefits-list {
     display: flex; 
     flex-wrap: wrap;
@@ -276,6 +360,7 @@ img {
 }
 
 .container {
+    background-color: #F4F4FD;
     padding: 0 15px; 
     width: 1158px; 
     margin: 0 auto; 
@@ -283,6 +368,25 @@ img {
 
 .about-title {
     margin-bottom: 72px; 
+}
+
+.socials-lincs {
+    background-color: #4D5AE5; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.class-name use {
+    fill: #ffffff;
+}
+.socials-lincs svg{
+    width: 24px;
+    height: 24px;   
 }
 
 .images-list {
@@ -299,7 +403,8 @@ img {
     flex-basis: calc((100% - 72px) / 4); 
     border-radius: 0 0 4px 4px; 
     flex-shrink: 0; 
-    
+    border: 1px solid #FFFFFF;
+    overflow: hidden; 
 }
 
 .about-item img {
@@ -309,18 +414,24 @@ img {
 }
 
 .about-card {
+    font-size: 20px;
     padding: 32px 0; 
-    border: 1px solid #e7e9fc; 
+    border: 1px solid #FFFFFF; 
     border-top: none;
 }
 
 .about-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     text-align: center; 
     margin-bottom: 8px; 
 }
 
 .about-position {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     text-align: center; 
+    margin-bottom: 8px;
 }
 /* .about-title {
     margin-bottom: 72px;
@@ -374,6 +485,7 @@ img {
 
 .container-portfolio {
     padding: 120px 0;
+    color: #f4f4fd; 
 
 }
 .second-title-portfolio {
@@ -382,8 +494,11 @@ img {
 }
 
 .third-title-portfolio {
-    text-align: center; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left; 
     margin-bottom: 8px;
+    color: #2e2f42;
 }
 
 .images-portfolio {
@@ -420,8 +535,13 @@ img {
     border-top: none;
     box-sizing: border-box;
 } 
-
+.profession {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:#434455
+} 
 /* Footer */
+
 /* .footer-main {
     background-color: #2e2f42;
     color: #f4f4fd;
@@ -465,14 +585,81 @@ img {
     font-weight: 400;
 } */
 .footer-main {
-    padding: 100px 0; 
+    background-color: #2e2f42;
+    color: #f4f4fd;
+    text-align: left; 
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo-footer {
-    display: inline-block; 
+    /* display: inline-block;  */
     margin-bottom: 16px;
+    color: #4d5ae5;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    display: inline-block;
+
+}
+
+.footer-studio {
+    color: #f4f4fd;
 }
 
 .footer-info {
     max-width: 264px; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd
+}
+
+.social-media {
+    color: #f4f4fd;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 16px;
+
+}
+
+.linced-icon, 
+.fbook-icon,
+.twitt-icon,
+.inst-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;          
+    background: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-container {
+    padding-left: 120px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    gap: 16px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.class-name {
+    width: 24px;  
+    height: 24px;
+    display: block;
 }
