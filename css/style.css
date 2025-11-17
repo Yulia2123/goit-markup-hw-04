@@ -724,6 +724,8 @@ img {
 
 .social-container {
     padding-left: 120px;
+    display: flex;
+    align-items: baseline;
 }
 .social-icons {
     display: flex;
