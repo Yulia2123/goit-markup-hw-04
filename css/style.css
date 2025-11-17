@@ -374,6 +374,12 @@ img {
 }
 
 /* About */
+
+.social-icons-people {
+    gap: 24px;
+
+}
+
 .section-about {
     padding: 120px 0; 
     background-color: #F4F4FD; 
@@ -399,6 +405,11 @@ img {
     height: 40px;
     border-radius: 50%;
     transition: background-color 0.3s;
+}
+
+.socials-lincs:hover,
+.socials-lincs:focus {
+    color: #404bbf;
 }
 
 .class-name use {
@@ -682,4 +693,5 @@ img {
     width: 24px;  
     height: 24px;
     display: block;
+    fill:#f4f4fd;
 }
