@@ -721,10 +721,12 @@ img {
     justify-content: center;
     overflow: hidden;
 }
-
+.footer-main-container {
+    align-items: baseline;
+    display: flex;
+}
 .social-container {
     padding-left: 120px;
-    display: flex;
     align-items: baseline;
 }
 .social-icons {
