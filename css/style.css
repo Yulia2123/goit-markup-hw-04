@@ -377,6 +377,11 @@ img {
 
 .social-icons-people {
     gap: 24px;
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
 
 }
 
