@@ -728,6 +728,7 @@ img {
 .footer-main-container {
     align-items: baseline;
     display: flex;
+    margin-right: 120px; /* DONE*/
 }
 .social-container {
     padding-left: 120px;
