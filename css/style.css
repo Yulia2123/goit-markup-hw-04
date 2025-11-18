@@ -712,10 +712,7 @@ img {
 
 }
 
-.linced-icon, 
-.fbook-icon,
-.twitt-icon,
-.inst-icon {
+.icon-social {
     width: 40px;
     height: 40px;
     border-radius: 50%;          
