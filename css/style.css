@@ -414,7 +414,7 @@ img {
 
 .socials-lincs:hover,
 .socials-lincs:focus {
-    background-color: #404BBF;
+    background-color: #404bbf;
     outline: none;
 }
 
@@ -499,7 +499,7 @@ img {
 
 .portfolio-item:hover .portfolio-overlay {
     transform: translateY(0%);
-    background-color: #404BBF; /*DONE*/
+    background-color: #404bb4; /*DONE*/
 }
 /* .about-title {
     margin-bottom: 72px;
