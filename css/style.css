@@ -499,7 +499,7 @@ img {
 
 .portfolio-item:hover .portfolio-overlay {
     transform: translateY(0%);
-    background-color: #404bbf; /*DONE*/
+    background-color: #404BBF; /*DONE*/
 }
 /* .about-title {
     margin-bottom: 72px;
