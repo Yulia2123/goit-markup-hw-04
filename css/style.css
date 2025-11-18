@@ -768,6 +768,10 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container-footer {
+    margin-right: 120px; /*done1*/
+}
+
 .socials-lincs-footer:hover,
 .socials-lincs-footer:focus {
     background-color: #31d0aa;
