@@ -9,6 +9,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --overlay-text-color: #ffffff;
+}
 .container-benefits {
     padding: 0 15px;
     width: 1158px;
@@ -242,7 +245,7 @@ body {
     margin-right: auto;
 }
 
-.hero-container {
+.container {
     padding: 0 15px; 
     width: 1158px; 
     margin: 0 auto;
@@ -273,6 +276,8 @@ body {
     cursor: pointer;
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 6px rgba(46, 47, 66, 0.1),
+                0px 2px 4px rgba(46, 47, 66, 0.06);
 }
 
 .hero-button:hover,
@@ -423,8 +428,8 @@ img {
     fill: #ffffff;
 }
 .socials-lincs svg{
-    width: 24px;
-    height: 24px;   
+    width: 16px;
+    height: 16px;   
 }
 
 .images-list {
@@ -457,9 +462,12 @@ img {
 
 .about-card {
     font-size: 20px;
-    padding: 32px 0; 
-    border: 1px solid #FFFFFF; 
+    padding: 32px 16px; 
+    border: 1px solid #e7e9fc; 
     border-top: none;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
 }
 
 .about-name {
@@ -677,7 +685,7 @@ img {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-flex;
@@ -696,7 +704,7 @@ img {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px; 
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd
 }
