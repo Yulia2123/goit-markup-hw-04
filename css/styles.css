@@ -489,7 +489,7 @@ img {
     margin-bottom: 8px; 
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
@@ -592,6 +592,7 @@ img {
     text-align: left; 
     margin-bottom: 8px;
     color: #2e2f42;
+    letter-spacing: 0.02em;
 }
 
 .images-portfolio {
